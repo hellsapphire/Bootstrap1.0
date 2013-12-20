@@ -1,0 +1,38 @@
+.outer_div {
+background-color: #eeeef4; 
+width: 300px; 
+height: 100%; 
+padding: 10px;
+margin: auto;
+}
+
+.outer_div .outer_header_text {
+color: #175087; 
+margin-left: 5px; 
+margin-top: -5px; 
+font-weight:lighter;
+}
+
+.outer_div .outer_header_text .button {
+margin-left: 83px; margin-top: 0px; height:25px; width: 100px;
+}
+
+.outer_div  .inner_div_one {
+background-color: white; margin-left: 0px; width: 300px; height: 100%
+}
+
+.outer_div  .inner_div_one .lighter_text {
+	
+}
+
+.outer_div  .inner_div_one .text_node{
+padding: 30px;
+}
+
+.outer_div .inner_div_one .button {
+margin-left: 144px; margin-top: 0px; height:20px; width: 15px;
+}
+
+.outer_div  .inner_div_two {
+background-color: white; margin-left: 0px; width: 300px; height: 100%
+}

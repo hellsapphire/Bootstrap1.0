@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css"/>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+</script>
+
+<script>
+$(document).ready(function(){
+
+  $("#close").click(function(){
+    $("div").hide();
+	$("#btn1").hide();
+  });
+
+  
+   $("#add").click(function(){
+   
+   $("#textnode1").append(" <li>[Text]</li><ul><li>[Text]</li></ul>");
+  });
+
+  $("#hjui").keyup(function(event){
+   if(event.keyCode == 13){
+    
+   $("#textnode1").append(" <li>[Text]</li><ul><li>[Text]</li></ul>");
+    
+   }
+  });
+  
+  
+  
+  
+  
+  $(function(){
+    $(".makeEditable").click(function(){
+        $('input:text').removeAttr("readonly");    
+    });
+    $(".makeNonEditable").click(function(){
+        $('input:text').attr("readonly", "readonly");    
+    });               
+});
+
+
+
+
+  
+});
+</script>
+
+</head>
+
+<body>
+
+<div id="pane_outer" class="outer_div" >
+
+<p class="outer_header_text">Type your text here
+<button id="close" class="button">x</button></p>
+
+<div id="pane_one" class="inner_div_one">
+
+<input id="hjui" type="text" value="Key Value" class="makeEditable" style="border: none;"></input>
+
+<ul id="textnode1" class="text_node">
+
+<li><input  type="text" value="Smart Art 1" class="makeEditable" name="userdefined" style="border: none;"></input></li>
+	<ul><li><input type="text" value="Smart Art Description" class="makeEditable" name="userdefined"  style="border: none;"></input></li></ul>
+</ul>
+<button id="add" class="button">o</button></p>
+</div>
+
+<div id="pane_two" class="inner_div_two"  >
+<p>Header</p> 
+
+<p>description....</p>
+
+</div>
+
+</div>
+</body>
+</html>
